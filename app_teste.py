@@ -298,22 +298,22 @@ with my_expander:
         size = x_test_size + x_train_size
         xx, yy, Z, data_x, data_y =countour_plot(teste_x, feature_1, feature_2, model, scaler=scaler_on)
         
-        st.subheader("Baseline model Accuracy")
-        st.text(str(round(acuracia_baseline,2)) + ' %')
+        st.subheader("Baseline Model Accuracy")
+        st.write(':pushpin: '+ str(round(acuracia_baseline,2)) + ' %')
         
         left_column, middle1_column, middle2_column, middle3_column, right_column = st.columns(5)
            
         with left_column:
             st.subheader("Accuracy")
-            st.text(str(round(accuracy,2)) + ' %')
+            st.write(str(round(accuracy,2)) + ' %')
 
         with middle1_column:
             st.subheader("Train size")
-            st.text(str(x_train_size) + ' ('+str(round(100*x_train_size/size,1)) + ' %)')
+            st.write(str(x_train_size) + ' ('+str(round(100*x_train_size/size,1)) + ' %)')
 
         with middle2_column:
             st.subheader("Test size")
-            st.text(str(x_test_size) + ' ('+str(round(100*x_test_size/size,1)) + ' %)')
+            st.write(str(x_test_size) + ' ('+str(round(100*x_test_size/size,1)) + ' %)')
             
         with middle3_column:
             st.subheader("Scaler")
