@@ -113,8 +113,8 @@ features=list(df.columns)[7:-1]
 # st.write(features)
 
 st.sidebar.subheader('Features')
-feature_1 = st.sidebar.selectbox('1st feature',features, 0)
-feature_2 = st.sidebar.selectbox('2nd feature',features, 1)
+feature_1 = st.sidebar.selectbox('1st feature',features, 3)
+feature_2 = st.sidebar.selectbox('2nd feature',features, 7)
 
 #st.sidebar.markdown("---")
 
