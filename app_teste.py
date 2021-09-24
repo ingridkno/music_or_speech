@@ -317,15 +317,17 @@ with my_expander:
             
         with middle3_column:
             st.subheader("Scaler")
-            st.text(scaler_on)
-        
+            if stratify_test:
+                st.write(":heavy_check_mark: "+str(scaler_on))
+            else:
+                st.write(":o: "+str(scaler_on))
+                
         with right_column:
             st.subheader("Stratify")
             if stratify_test:
                 st.write(":heavy_check_mark: "+str(stratify_test))
             else:
                 st.write(":o: "+str(stratify_test))
-                st.write(stratify_test)
             
         # fig, ax = plt.subplots()
 
