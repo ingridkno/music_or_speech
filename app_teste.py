@@ -276,7 +276,7 @@ with my_expander:
     
     with _:
         st.subheader('Seed')
-        st.write("If you use the same seed you will get exactly the same pattern of numbers. This means that whether you're making a train test split, generating a numpy array from some random distribution or even fitting a ML model, setting a seed will be giving you the same set of results time and again.")
+        st.write("If you use the same seed you will get exactly the same pattern of numbers. This means that whether you're making a train test split or fitting this machine learning model, setting a seed will be giving you the same set of results time and again.")
         st.write('**SEED NUMBER**: :seedling:'+str(SEED)+' :seedling:')
 
         
