@@ -317,7 +317,7 @@ with my_expander:
             
         with middle3_column:
             st.subheader("Scaler")
-            if stratify_test:
+            if scaler_on:
                 st.write(":heavy_check_mark: "+str(scaler_on))
             else:
                 st.write(":o: "+str(scaler_on))
