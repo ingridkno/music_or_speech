@@ -400,10 +400,12 @@ with my_expander:
             optimizing_df.loc[counter, :]=[combinacao[0], combinacao[1], accuracy]            
             counter+=1
         
-        st.dataframe(optimizing_df.reset_index()[optimizing_df.columns[1:]].sort_values(by='Accuracy', ascending=False))
+        st.dataframe(optimizing_df.reset_index().sort_values(by='Accuracy', ascending=False))
 
 my_expander = st.expander(label='Congratulations!')
 with my_expander:
-    'You have been through the first steps of a machine learning model. What is next?!? Follow me for more upcoming tutorials.'
+    'You have been through the first steps of a machine learning model.'
+    st.write('**What is next?!?**)
+    st.write('Follow me for more upcoming tutorials!')
     st.balloons()
     
