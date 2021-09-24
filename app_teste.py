@@ -309,11 +309,13 @@ with my_expander:
 
         with middle1_column:
             st.subheader("Train size")
-            st.write(str(x_train_size) + ' samples ('+str(round(100*x_train_size/size,1)) + ' %)')
+            st.write(str(x_train_size) + ' samples')
+            st.write('('+str(round(100*x_train_size/size,1)) + ' %)')
 
         with middle2_column:
             st.subheader("Test size")
-            st.write(str(x_test_size) + ' samples ('+str(round(100*x_test_size/size,1)) + ' %)')
+            st.write(str(x_test_size) + ' samples')
+            st.write('('+str(round(100*x_test_size/size,1)) + ' %)')
             
         with middle3_column:
             st.subheader("Scaler")
