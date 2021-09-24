@@ -321,8 +321,11 @@ with my_expander:
         
         with right_column:
             st.subheader("Stratify")
-            st.text(stratify_test)
-
+            if stratify_test:
+                st.write(":heavy_check_mark: "+stratify_test)
+            else:
+                st.write(":o: "+stratify_test)
+            
         # fig, ax = plt.subplots()
 
         # ax.contourf(xx, yy, Z, cmap='Blues')
