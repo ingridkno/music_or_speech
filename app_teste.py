@@ -322,9 +322,10 @@ with my_expander:
         with right_column:
             st.subheader("Stratify")
             if stratify_test:
-                st.write(":heavy_check_mark: "+stratify_test)
+                st.write(":heavy_check_mark: "+str(stratify_test))
             else:
-                st.write(":o: "+stratify_test)
+                st.write(":o: "+str(stratify_test))
+                st.write(stratify_test)
             
         # fig, ax = plt.subplots()
 
