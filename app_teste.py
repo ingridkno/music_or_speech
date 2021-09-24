@@ -287,7 +287,7 @@ my_expander = st.expander(label='Running model')
 with my_expander:
     st.write('Having chosen the features and parameters, it is time to train and test model. However, before that, it is important to stablish a measurement and a baseline model to compare the results.')
     st.subheader('Measurement')
-    st.write('**Accuracy** is the measurement chosen to evaluate the models. That will state how many correct predictions compared to total number of predictions.") 
+    st.write("**Accuracy** is the measurement chosen to evaluate the models. That will state how many correct predictions compared to total number of predictions.") 
     st.subheader('Baseline model')
     st.write('A baseline is the result of a very basic model. In this project, the baseline will predict our test results as the class with more samples, music. So, our initial goal model is to achieve a better score than the baseline.")
              
