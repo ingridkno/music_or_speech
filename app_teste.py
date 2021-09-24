@@ -405,7 +405,7 @@ with my_expander:
 my_expander = st.expander(label='Congratulations!')
 with my_expander:
     'You have been through the first steps of a machine learning model.'
-    st.write('**What is next?!?**)
+    st.write('**What is next?!?**')
     st.write('Follow me for more upcoming tutorials!')
     st.balloons()
     
