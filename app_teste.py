@@ -153,7 +153,8 @@ left_column, middle_column = st.columns((2,1))
 with left_column:
     st.title('Music :musical_note: or Speech :speech_balloon:?')
 with middle_column:
-    st.video(video_bytes)
+    #st.video(video_bytes)
+    st.write('*by Ingrid Knochenhauer de Souza Mendes*)
 st.subheader('\nA simple machine learning model applied to audio')
 st.write('\nIn this app, we will be able to run through the steps to build a simple machine learning model applied to audio.') 
 
