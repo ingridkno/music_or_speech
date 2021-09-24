@@ -383,7 +383,8 @@ with my_expander:
 st.subheader('Test and Analysis')
 my_expander = st.expander(label='Optimization')
 with my_expander:
-    'For the chosen parameters, how would be the accuracy for all the feature pairs? In this step, you can run through all the features, run the model and see their accuracy scores'
+    'For the chosen parameters, how would be the accuracy for all the feature pairs?' 
+    st.write('In this step, you can go through all the features, run the model and see their accuracy scores')
     if st.button('Optimize Model'):
         optimizing_df = pd.DataFrame(columns=['Feature_1', 'Feature_2','Accuracy'])
 
