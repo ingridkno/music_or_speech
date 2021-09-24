@@ -383,6 +383,7 @@ with my_expander:
 st.subheader('Test and Analysis')
 my_expander = st.expander(label='Optimization')
 with my_expander:
+    'For the chosen parameters, how would be the accuracy for all the feature pairs? In this step, you can run through all the features, run the model and see their accuracy scores'
     if st.button('Optimize Model'):
         optimizing_df = pd.DataFrame(columns=['Feature_1', 'Feature_2','Accuracy'])
 
@@ -407,6 +408,6 @@ my_expander = st.expander(label='Congratulations!')
 with my_expander:
     'You have been through the first steps of a machine learning model.'
     st.write('**What is next?!?**')
-    st.write('Follow me for more upcoming tutorials!')
+    st.write('Follow me for more upcoming projects!')
     st.balloons()
     
