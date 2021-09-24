@@ -374,7 +374,7 @@ with my_expander:
                 )
             )
 
-
+        st.subheader(':crystal_ball: Prediction Curve')
         st.plotly_chart(fig)
     
 st.subheader('Test and Analysis')
