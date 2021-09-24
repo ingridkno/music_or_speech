@@ -285,8 +285,13 @@ with my_expander:
 st.subheader('Train Model')
 my_expander = st.expander(label='Running model')
 with my_expander:
-    'The algorithm that was chosen to run this data was SVC'
-
+    st.write('Having chosen the features and parameters, it is time to train and test model. However, before that, it is important to stablish a measurement and a baseline model to compare the results.')
+    st.subheader('Measurement')
+    st.write('**Accuracy** is the measurement chosen to evaluate the models. That will state how many correct predictions compared to total number of predictions.") 
+    st.subheader('Baseline model')
+    st.write('A baseline is the result of a very basic model. In this project, the baseline will predict our test results as the class with more samples, music. So, our initial goal model is to achieve a better score than the baseline.")
+             
+             
     if st.button('Run Model'):
         accuracy, acuracia_baseline, x_train_size, x_test_size, teste_x, teste_y, model = ml_model(x, y, SEED, scaler_on, stratify_test)
         #st.text(scaler_on)
