@@ -400,7 +400,8 @@ with my_expander:
             optimizing_df.loc[counter, :]=[combinacao[0], combinacao[1], accuracy]            
             counter+=1
         
-        st.dataframe(optimizing_df.sort_values(by='Accuracy', ascending=False).reset_index())
+        features_best=optimizing_df.sort_values(by='Accuracy', ascending=False).reset_index()
+        st.dataframe(features_best[features_best.columns[1:])
 
 my_expander = st.expander(label='Congratulations!')
 with my_expander:
